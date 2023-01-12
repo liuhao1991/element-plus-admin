@@ -2,7 +2,7 @@
  * @Author: lh@metgs.com
  * @Date: 2022-09-08 16:58:06
  * @LastEditors: lh@metgs.com
- * @LastEditTime: 2023-01-05 11:07:41
+ * @LastEditTime: 2023-01-12 14:44:06
  * @Description: ...
 -->
 <template>
@@ -16,7 +16,7 @@
         <div class="logo flex-c">
           <!-- <img src="@/assets/images/logo.png" class="logo-img"/> -->
           <div class="logo-text flex-c">
-            婺城区综合气象服务系统
+            {{ title }}
           </div>
         </div>
       </router-link>
@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-
+const title = import.meta.env.VITE_APP_TITLE;
 </script>
 
 <style lang="less" scoped>
